@@ -48,17 +48,15 @@ class Program
 
             else if (userChoice == 3)
             {
-                string file;
                 Console.Write("What is the file name?");
-                file = Console.ReadLine();
+                string file = Console.ReadLine();
                 theJournal.LoadFromFile(file);
             }
 
             else if (userChoice == 4)
             {
-                string file;
                 Console.Write("What is your file name?:");
-                file = Console.ReadLine();
+                string file = Console.ReadLine();
                 theJournal.SaveToFile(file);
             }
         } while (userChoice!=5);
