@@ -33,7 +33,9 @@ class Program
             {
                 //set date
                 DateTime theCurrentTime = DateTime.Now;
-                anEntry._dateToday=theCurrentTime.ToShortDateString();
+
+                anEntry._dateToday=theCurrentTime.ToString("dd MMMM yyyy");
+                anEntry._time=theCurrentTime.ToString("h:mm tt");
                 //get random Prompt
                 anEntry._promptText=thePrompt.GetRandomPrompt();
                 Console.WriteLine(anEntry._promptText);
