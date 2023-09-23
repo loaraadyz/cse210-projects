@@ -19,6 +19,7 @@ class Program
         do
         {
             Entry anEntry = new Entry();
+            Console.WriteLine("Welcome to your Journal!\n");
             Console.WriteLine("Please select one of the following choices:");
             Console.WriteLine("1. Write");
             Console.WriteLine("2. Display");
@@ -50,14 +51,14 @@ class Program
 
             else if (userChoice == 3)
             {
-                Console.Write("What is the file name?");
+                Console.Write("\nTo load, please enter the file name:");
                 string file = Console.ReadLine();
                 theJournal.LoadFromFile(file);
             }
 
             else if (userChoice == 4)
             {
-                Console.Write("What is your file name?:");
+                Console.Write("\nTo save, please enter a file name:");
                 string file = Console.ReadLine();
                 theJournal.SaveToFile(file);
             }

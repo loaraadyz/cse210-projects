@@ -26,8 +26,8 @@ public class Journal
         {
             foreach (Entry entry in _entries)
             {
-                outputFile.WriteLine($"{entry._dateToday} {entry._promptText}");
-                outputFile.WriteLine(entry._entryText);
+                outputFile.WriteLine($"DATE: {entry._dateToday} TIME: {entry._time} \nPROMPT: {entry._promptText}");
+                outputFile.WriteLine($"ENTRY: {entry._entryText}\n");
             }
             
         }
@@ -36,7 +36,7 @@ public class Journal
     public void LoadFromFile(string file)
     {
 
-        Console.WriteLine("Reading file...\n");
+        Console.WriteLine("\nReading file...\n");
         string[] lines = System.IO.File.ReadAllLines(file);
 
         foreach (string line in lines)

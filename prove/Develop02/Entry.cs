@@ -8,8 +8,7 @@ public class Entry
     public void DisplayEntry()
     {
         Console.WriteLine($"DATE: {_dateToday} TIME: {_time} \nPROMPT: {_promptText}");
-        Console.WriteLine($"ENTRY: {_entryText}");
-        Console.WriteLine();
+        Console.WriteLine($"ENTRY: {_entryText}\n");
     }
 
 
