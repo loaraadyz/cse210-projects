@@ -35,7 +35,7 @@ class Program
                 DateTime theCurrentTime = DateTime.Now;
                 anEntry._dateToday=theCurrentTime.ToShortDateString();
                 //get random Prompt
-                anEntry._promptText="Display Random Prompt: ";
+                anEntry._promptText=thePrompt.GetRandomPrompt();
                 Console.WriteLine(anEntry._promptText);
                 anEntry._entryText=Console.ReadLine();
                 theJournal.AddEntry(anEntry);
