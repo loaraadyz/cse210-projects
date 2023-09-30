@@ -26,6 +26,10 @@ class Program
             {
                 userInput = "quit";
             }
+            else if(userInput == "quit")
+            {
+                break;
+            }
             else
             {
                 Console.WriteLine("Invalid input. Press Enter to continue...");
