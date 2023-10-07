@@ -9,7 +9,8 @@ class Program
     static void Main(string[] args)
     {
         int number = 5;
-        do{
+        do
+        {
             string userInput;
             Console.Clear();
             Console.WriteLine("Welcome to Mindfulness Activity!\n");
@@ -55,6 +56,5 @@ class Program
                 reflecting2.DisplayEndingMessage();
             }
         } while (number != 4);
-        }
-
+    }
 }

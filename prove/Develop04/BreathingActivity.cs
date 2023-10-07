@@ -3,7 +3,6 @@ public class BreathingActivity:Activity
     public BreathingActivity(string title, string description, int seconds) : base (title, description, seconds)
     {}
 
-
     public void Run(int seconds)
     {
         Console.Clear();
@@ -14,7 +13,6 @@ public class BreathingActivity:Activity
 
         DateTime currentTime = new DateTime();
         currentTime = DateTime.Now;
-
 
         ShowSpinner(3);
 

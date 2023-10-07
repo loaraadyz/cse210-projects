@@ -7,12 +7,10 @@ public class ListingActivity:Activity
     private List<string> _responses = new List<string>();
 
     public ListingActivity(string title, string description, int duration ):base(title, description, duration)
-    {
-    }
+    {}
 
     public void Run(int seconds)
     {
-
         _prompts.Add("--Who are people that you appreciate?--");
         _prompts.Add("--What are personal strengths of yours?--");
         _prompts.Add("--Who are people that you have helped this week?--");

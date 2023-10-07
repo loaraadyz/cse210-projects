@@ -4,8 +4,7 @@ public class ReflectingActivity:Activity
     private List<string> _questions = new List<string>();
 
     public ReflectingActivity(string title, string description, int duration) : base (title, description,duration)
-    {
-    }
+    {}
 
     public void Run(int seconds)
     {
@@ -52,7 +51,6 @@ public class ReflectingActivity:Activity
                 currentTime = DateTime.Now; 
             }
         }
-
     }
 
     private string GetRandomPrompt()
@@ -61,7 +59,6 @@ public class ReflectingActivity:Activity
         int index = random.Next(_prompts.Count);
 
         string prompt = _prompts[index];
-
         return prompt;
     }
 
@@ -72,7 +69,6 @@ public class ReflectingActivity:Activity
 
         string question = _questions[index];
         return question;
-        
     }
 
     public void DisplayPrompt()

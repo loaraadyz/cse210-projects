@@ -17,7 +17,6 @@ public class Activity
         Console.WriteLine($"Welcome to the {_name}.");
         Console.WriteLine($"\n{_description}");
         Console.WriteLine($"How long, in seconds, would you like for your session?");
-        
     }
 
     public void DisplayEndingMessage()
@@ -28,11 +27,9 @@ public class Activity
         ShowSpinner(2);
         Console.WriteLine($"\nYou have completed another {_duration} seconds of the {_name}.\n");
         ShowSpinner(3);
-
     }
 
     public void ShowSpinner(int seconds)
-    {
     {
         int spinnerPosition = 25;
         int spinWait = 500;
@@ -54,7 +51,6 @@ public class Activity
         }
         Console.CursorLeft = spinnerPosition;
         Console.Write(" ");
-    }
     }
 
     public void ShowCountDown(int seconds)
