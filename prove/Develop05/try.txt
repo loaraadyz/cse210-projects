@@ -1,0 +1,5 @@
+90
+SimpleGoal:,Submit assignment,late submission,50,True
+EternalGoal:,pray daily, every morning and evening everyday for a week, 7
+ChecklistGoal:,help other people ,one person each day for one week, 10,500,7,2
+NegativeGoal:,sleep late,pass 11pm,20
