@@ -28,6 +28,6 @@ public class RunningActivity : Activity{
 
     public override string GetActivityType()
     {
-        return "Running";
+        return "Running Activity";
     }
 }

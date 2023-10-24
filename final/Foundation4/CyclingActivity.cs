@@ -29,6 +29,6 @@ public class CyclingActivity : Activity
 
     public override string GetActivityType()
     {
-        return "Stationary Bicycle";
+        return "Cycling Activity";
     }
 }

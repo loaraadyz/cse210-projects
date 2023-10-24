@@ -29,6 +29,6 @@ class SwimmingActivity : Activity
 
     public override string GetActivityType()
     {
-        return "Swimming";
+        return "Swimming Activity";
     }
 }
